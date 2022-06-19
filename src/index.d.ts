@@ -8,6 +8,6 @@ export {OrbitControls} from './typings/orbitcontrols'
 export {OrthographicTrackballControls} from './typings/orthographicTrackballcontrols'
 export {PointerLockControls} from './typings/pointerLockcontrols'
 export {TrackballControls} from './typings/trackballcontrols'
-export {TransformControls} from './typings/transformcontrols'
+export {TransformControls, TransformControlsGizmo, TransformControlsPlane} from './typings/transformcontrols'
 
 export as namespace ThreeControls
