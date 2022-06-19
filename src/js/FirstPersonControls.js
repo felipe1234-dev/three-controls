@@ -192,7 +192,7 @@ function FirstPersonControls( object, domElement ) {
 
 		if ( this.heightSpeed ) {
 
-			var y = THREE.Math.clamp( this.object.position.y, this.heightMin, this.heightMax );
+			var y = THREE.MathUtils.clamp( this.object.position.y, this.heightMin, this.heightMax );
 			var heightDelta = y - this.heightMin;
 
 			this.autoSpeedFactor = delta * ( heightDelta * this.heightCoef );
@@ -234,13 +234,13 @@ function FirstPersonControls( object, domElement ) {
 		if ( this.lookVertical ) this.lat -= this.mouseY * actualLookSpeed * verticalLookRatio;
 
 		this.lat = Math.max( - 85, Math.min( 85, this.lat ) );
-		this.phi = THREE.Math.degToRad( 90 - this.lat );
+		this.phi = THREE.MathUtils.degToRad( 90 - this.lat );
 
-		this.theta = THREE.Math.degToRad( this.lon );
+		this.theta = THREE.MathUtils.degToRad( this.lon );
 
 		if ( this.constrainVertical ) {
 
-			this.phi = THREE.Math.mapLinear( this.phi, 0, Math.PI, this.verticalMin, this.verticalMax );
+			this.phi = THREE.MathUtils.mapLinear( this.phi, 0, Math.PI, this.verticalMin, this.verticalMax );
 
 		}
 
