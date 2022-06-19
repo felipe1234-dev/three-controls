@@ -5,9 +5,8 @@
   "main": "src/index.js",
   "dependencies": {
     "@types/three": "^0.93.15",
-    "three": "^0.100.0"
+    "three": "^0.141.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
