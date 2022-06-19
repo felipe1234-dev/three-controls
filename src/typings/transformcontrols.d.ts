@@ -1,4 +1,4 @@
-import { Camera, Object3D } from "three";
+import { Camera, Object3D, Mesh } from "three";
 
 export class TransformControls extends Object3D {
     constructor(object: Camera, domElement?: HTMLElement);
