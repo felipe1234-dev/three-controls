@@ -10,7 +10,10 @@ import OrbitControls from './js/OrbitControls'
 import OrthographicTrackballControls from './js/OrthographicTrackballControls'
 import PointerLockControls from './js/PointerLockControls'
 import TrackballControls from './js/TrackballControls'
-import TransformControls from './js/TransformControls'
+import TransformControls, {
+  TransformControlsGizmo,
+  TransformControlsPlane
+} from './js/TransformControls'
 
 export {
   DeviceOrientationControls,
@@ -23,5 +26,7 @@ export {
   OrthographicTrackballControls,
   PointerLockControls,
   TrackballControls,
-  TransformControls
+  TransformControls,
+  TransformControlsGizmo,
+  TransformControlsPlane
 }

@@ -9,15 +9,17 @@ export class TransformControls extends Object3D {
 
     object: Object3D;
 
+    mode: "translate" | "rotate" | "scale";
+    
     update(): void;
 
     detach(): void;
 
     attach(object: Object3D): void;
 
-    getMode(): string;
+    getMode(): "translate" | "rotate" | "scale";
 
-    setMode(mode: string): void;
+    setMode(mode: "translate" | "rotate" | "scale"): void;
 
     setSnap(snap: any): void;
 
@@ -31,3 +33,28 @@ export class TransformControls extends Object3D {
 
 }
 
+export class TransformControlsGizmo extends Object3D {
+    constructor();
+    
+    gizmo: {
+        translate: Object3D;
+        rotate: Object3D;
+        scale: Object3D
+    };
+    
+    picker: {
+        translate: Object3D;
+        rotate: Object3D;
+        scale: Object3D
+    };
+    
+    helper: {
+        translate: Object3D;
+        rotate: Object3D;
+        scale: Object3D
+    }
+}
+
+export class TransformControlsPlane extends Mesh {
+    constructor();
+}

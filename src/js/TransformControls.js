@@ -1474,3 +1474,4 @@ TransformControlsPlane.prototype = Object.assign( Object.create( THREE.Mesh.prot
 } );
 
 export default TransformControls;
+export {TransformControlsGizmo, TransformControlsPlane};
